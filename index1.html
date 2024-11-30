@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction Layout</title>
+  <style>
+    .container {
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      background-color: #f0f0f0; 
+      gap: 10px; 
+    }
+    .container.row {
+      flex-direction: row; 
+    }
+    .container.column {
+      flex-direction: column; 
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: #4caf50; 
+      color: white; 
+      font-size: 18px; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+
+  <button onclick="toggleLayout()">Switch Layout</button>
+
+  <script>
+    function toggleLayout() {
+      const container = document.querySelector('.container');
+      container.classList.toggle('column');
+    }
+  </script>
+</body>
+</html>
