@@ -1,0 +1,68 @@
+/* Container for both sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Left section (Home styling) */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: calc(50% - 10px); /* Makes two items per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card .description {
+    text-align: center;
+  }
+  
+  .card .description p {
+    margin: 10px 0;
+  }
+  
+  .card .description a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Right section (Headphones) */
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    width: calc(50% - 10px); /* Makes two items per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product p {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
